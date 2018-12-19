@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,18 +10,14 @@
         android:id="@+id/imageView"
         android:layout_width="591dp"
         android:layout_height="824dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_gravity="bottom"
         app:srcCompat="@android:color/holo_blue_bright" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="510dp"
         android:layout_height="79dp"
-        android:text="点击图片更换其他图片[click image to select other pictures]"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_gravity="top"
+        android:text="点击图片更换其他图片[click image to select other pictures]" />
 
-</android.support.constraint.ConstraintLayout>
+</FrameLayout>
